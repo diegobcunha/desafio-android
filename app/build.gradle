@@ -34,6 +34,10 @@ android {
         targetCompatibility 1.8
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
@@ -72,10 +76,9 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
-    implementation "com.squareup.okhttp3:mockwebserver:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
 
     implementation "com.squareup.picasso:picasso:$picasso_version"
     implementation "de.hdodenhof:circleimageview:$circleimageview_version"
