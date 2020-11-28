@@ -3,10 +3,8 @@ package com.picpay.desafio.android.templates
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import com.picpay.desafio.android.coroutines.DispatchersProvider
-import com.picpay.desafio.android.livedata.fetchValue
+import com.picpay.desafio.android.extensions.livedata.fetchValue
 import com.picpay.desafio.android.model.resource.Resource
-import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.Dispatchers
 
 abstract class ResourceViewModel<T>(dispatcher: DispatchersProvider): CoroutineViewModel(dispatcher) {
 

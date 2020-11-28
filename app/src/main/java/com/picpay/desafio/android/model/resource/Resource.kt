@@ -79,5 +79,6 @@ sealed class Resource<T>(open val data: T?) {
     data class Loading<T>(override val data: T? = null) : Resource<T>(data)
 }
 
+fun <T> success(value: T?): Resource<T> = Resource.success(value)
 fun <T> loading(data: T? = null): Resource<T> =
     Resource.loading(data)

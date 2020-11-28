@@ -5,7 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.picpay.desafio.android.databinding.ActivityMainBinding
-import com.picpay.desafio.android.livedata.whitOwner
+import com.picpay.desafio.android.extensions.livedata.whitOwner
 import com.picpay.desafio.android.view.user.UserListAdapter
 import com.picpay.desafio.android.view.user.UserViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel

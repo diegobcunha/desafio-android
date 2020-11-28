@@ -1,5 +1,6 @@
 package com.picpay.desafio.android.templates
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.picpay.desafio.android.coroutines.DispatchersProvider
@@ -18,7 +19,6 @@ abstract class SuspendFetchViewModel<T>(dispatcher: DispatchersProvider) :
     }
 
     protected abstract suspend fun fetch(): Resource<T>
-
 
     private fun createLiveData() = liveData<Resource<T>> {
         emit(loading())

@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.livedata
+package com.picpay.desafio.android.extensions.livedata
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
